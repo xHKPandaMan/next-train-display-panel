@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next Train Display</title>
 </head>
+
 <body>
     <div id="container"></div>
     <script>
 
-async function getTrainData(){
-   const response=await fetch('https://rt.data.gov.hk/v1/transport/mtr/getSchedule.php?line=WRL&sta=ETS');
-   const data=await response.json();
-   document.getElementById('container').innerHTML=`${JSON.stringify(data)}`
-}
-       
-getTrainData();
+        async function getTrainData() {
+            const response = await fetch('https://rt.data.gov.hk/v1/transport/mtr/getSchedule.php?line=WRL&sta=ETS');
+            const data = await response.json();
+                let wording=""
+                data.data["WRL-ETS"]["UP"].map(item=>{
+                    wording+=`<br> ${item.dest} ${item.plat} ${duration(item.time)}</br>`
+                })
+                
+                document.getElementById('container').innerHTML = wording
+
+        }
+        getTrainData();
+
+        function duration(arrivalTime){
+            const currentMinutes= new Date().getMinutes();
+            const arrivalMinutes= arrivalTime.split(" ")[1].split(':')[1]
+            if(arrivalMinutes-currentMinutes>=0){
+                return arrivalMinutes-currentMinutes
+            }else{
+                return arrivalMinutes+60-currentMinutes
+            }
+        }
+
     </script>
 </body>
+
 </html>
