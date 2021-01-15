@@ -1,0 +1,60 @@
+#container{
+    border: black 10px solid;
+    margin:5px;
+}
+
+.destination{
+    font-size: 45px;
+}
+
+.time-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.light-time-box{
+    background-color: #FFFFFF;
+}
+
+.dark-time-box{
+    background-color: #74C7D7;
+}
+
+.platform-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.platform-indicator{
+    background-color: #1072A2;
+    border-radius: 30px;
+    color: #FFFFFF;
+    height: 43px;
+    font-size: 40px;
+    margin-right: 20px;
+    text-align: center;
+    width: 43px;
+}
+
+.duration{
+    font-size: 40px;
+    font-weight: bold;
+    width: 90px;
+}
+
+.minute{
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.time{
+    background-color: #1b2442;
+    padding: 5px;
+    color:#FFFFFF;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
