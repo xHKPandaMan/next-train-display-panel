@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7d/D336-D335%28012%29_MTR_West_Rail_Line_18-03-2020.jpg");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f9/D314_West_Rail_Line_21-06-2016.jpg");
   background-repeat: no-repeat;
   background-position: right center;
   background-attachment: fixed;
@@ -7,8 +7,13 @@ body {
 }
 
 .box-wrapper {
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex;
+  flex-direction: column; */
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(0,0,0,0.75);
+  width: fit-content;
+  height: 100%;
 }
 
 .box {
