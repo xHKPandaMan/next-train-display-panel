@@ -1,60 +1,82 @@
-#container{
-    border: black 10px solid;
-    margin:5px;
+body {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7d/D336-D335%28012%29_MTR_West_Rail_Line_18-03-2020.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.destination{
-    font-size: 45px;
+.box-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.time-box{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+.box {
+  border: black 6px solid;
+  margin: 5px;
+  width: 45vw;
 }
 
-.light-time-box{
-    background-color: #FFFFFF;
+.destination {
+  font-size: 30px;
 }
 
-.dark-time-box{
-    background-color: #74C7D7;
+.time-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.platform-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.light-time-box {
+  background-color: #ffffff;
 }
 
-.platform-indicator{
-    background-color: #1072A2;
-    border-radius: 30px;
-    color: #FFFFFF;
-    height: 43px;
-    font-size: 40px;
-    margin-right: 20px;
-    text-align: center;
-    width: 43px;
+.dark-time-box {
+  background-color: #74c7d7;
 }
 
-.duration{
-    font-size: 40px;
-    font-weight: bold;
-    width: 90px;
+.platform-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.minute{
-    font-size: 20px;
-    font-weight: normal;
-    margin-left: 10px;
+.platform-indicator {
+  background-color: #e24a89;
+  border-radius: 30px;
+  color: #ffffff;
+  height: 35px;
+  font-size: 30px;
+  margin-right: 20px;
+  text-align: center;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.time{
-    background-color: #1b2442;
-    padding: 5px;
-    color:#FFFFFF;
-    font-size: 30px;
-    display: flex;
-    justify-content: flex-end;
+.duration {
+  font-size: 30px;
+  font-weight: bold;
+  width: 90px;
 }
+
+.minute {
+  font-size: 15px;
+  font-weight: normal;
+  margin-left: 8px;
+}
+
+.time {
+  background-color: #1b2442;
+  padding: 5px;
+  color: #ffffff;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.navbar-dark{
+    background-color: deeppink!important
+} 
